@@ -1,11 +1,11 @@
-# anypray
+# ardeo
 
 A prayer-walk app for New Zealand. You walk, it records your route, and the map
 fills in.
 
-anypray is in **beta**. It records walks on your phone — GPS filtering,
-auto-pause, vehicle detection, crash recovery — and keeps your history. The
-coverage map is what we are building next.
+ardeo is in **beta**. It records walks on your phone — GPS filtering,
+auto-pause, vehicle detection, crash recovery — keeps your history, and fills in
+a coverage map of the ground your church has prayed over.
 
 ---
 
@@ -17,6 +17,6 @@ coverage map is what we are building next.
 
 ---
 
-Your route never leaves your phone unless you sign in. Even then, the first and
-last 150 metres are cut off before anything is uploaded, and nobody can see the
-path you walked.
+The line you walked never leaves your phone — not to your friends, not to your
+group, not to us. A shared walk travels as the 65-metre squares it passed
+through, never as a route.

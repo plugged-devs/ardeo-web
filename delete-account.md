@@ -1,22 +1,15 @@
-# Delete your anypray account
+# Delete your ardeo account
 
-You can delete your account and its data at any time. You do not need the app
-installed to do it.
-
----
-
-## From inside the app
-
-**Settings → Account → Delete account**
-
-You will be asked to confirm. Deletion begins immediately.
+You can delete your account and its data at any time.
 
 ---
 
-## Without the app
+## How
 
-Email **[ksyong1964@gmail.com](mailto:ksyong1964@gmail.com)** from the address you
-signed in with, with the subject **Delete my account**. That subject line matters — the same address handles support and privacy, and it is how deletion requests get picked out.
+Email **[ksyong1964@gmail.com](mailto:ksyong1964@gmail.com)** from the address
+you signed in with, with the subject **Delete my account**. That subject line
+matters — the same address handles support and privacy, and it is how deletion
+requests get picked out.
 
 We will confirm within 7 days and complete the deletion within 30.
 
@@ -28,10 +21,13 @@ ask you to reveal it.
 
 ## What gets deleted
 
-- Your profile and display name
-- Every walk you recorded, including its statistics
-- All stored route geometry
-- Anything you wrote in the app
+- Your profile, display name, handle and photo
+- Every walk you recorded, including its statistics and note
+- The coverage squares recorded against your walks
+- Anything else you wrote in the app
+
+There is no stored route line to delete. ardeo never uploads one — see the
+[privacy policy](./privacy.md).
 
 Data held only on your own phone is removed when you delete the app.
 
@@ -50,9 +46,9 @@ Nothing that identifies you survives deletion.
 
 ## Timing
 
-Deletion starts immediately and completes within 30 days. Backups are purged on
-their normal rotation, which can take up to a further 30 days — after that, no
-copy remains.
+Deletion starts when we have confirmed it is you, and completes within 30 days.
+Backups are purged on their normal rotation, which can take up to a further 30
+days — after that, no copy remains.
 
 ---
 
