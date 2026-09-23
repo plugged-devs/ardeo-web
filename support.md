@@ -1,6 +1,6 @@
 # ardeo support
 
-**Email:** [ksyong1964@gmail.com](mailto:ksyong1964@gmail.com)
+**Email:** [hello@ardeo.nz](mailto:hello@ardeo.nz)
 
 ardeo is in beta. If something is wrong, telling us is genuinely useful — a
 lot of what we need to fix only shows up on real phones, on real streets.
