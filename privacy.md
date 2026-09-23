@@ -1,6 +1,6 @@
 # Privacy policy
 
-**ardeo** · Last updated 18 September 2026
+**ardeo** · Last updated 23 September 2026
 
 ardeo records prayer walks. Recording a walk means recording where you walked,
 which is sensitive, and this policy exists to say plainly what happens to that
@@ -174,17 +174,23 @@ We do not use advertising networks, analytics SDKs, or third-party trackers.
 
 Walks are kept until you delete them or delete your account.
 
-**To delete your account**, see [our deletion page](./delete-account.md). We
-confirm within 7 days and complete the deletion within 30.
+**To delete your account**, see [our deletion page](./delete-account.md).
+Deleting in the app is immediate — you're signed out straight away — and
+removal from our servers completes within 30 days.
 
-Deleting removes your profile, your photo, your walks and their statistics, your
-notes, and your grid squares. The **coverage totals you contributed are not
-reversed** — they are counts for an area with no person attached, and other
-people's records of their own neighbourhoods are built from the same totals.
-Nothing that identifies you survives deletion.
+Deleting removes your profile, your photo, your walks and their statistics,
+your notes, and your grid squares. If you're the only owner of a group, the
+group — and everyone's membership in it — is deleted along with your account.
 
-Data held only on your own phone goes when you delete the app. We cannot recover
-it for you.
+The **coverage totals you contributed are not reversed** — a coverage count
+records that an area was prayed over on a given day. It has no person attached
+to it and cannot be traced back to you, so those counts stay. Other people's
+records of their own neighbourhoods are built from the same totals, so
+removing yours would corrupt theirs. Nothing that identifies you survives
+deletion.
+
+Data held only on your own phone goes when you delete the app. We cannot
+recover it for you.
 
 ---
 
@@ -226,6 +232,14 @@ them away quietly:
   uploaded and kept private by the database.
 - Groups, friends, handles, profile photos, walk notes and the coverage map did
   not exist yet and are now described above.
+
+### What changed on 23 September 2026
+
+Account deletion moved from an email-only request to in-app self-service, with
+email kept as a fallback for a lost phone or lost access to the address you
+signed in with. Deleting in the app is immediate — you are signed out right
+away, and removal from our servers completes within 30 days, rather than the
+7-day human confirmation this page used to describe.
 
 ---
 
