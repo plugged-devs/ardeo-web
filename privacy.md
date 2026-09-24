@@ -37,9 +37,9 @@ We are the agency responsible for your personal information under the
   suggests a religious belief, and anyone who can see your profile or your
   walks can draw that conclusion. We treat everything here with that in mind.
 - We do not sell your information, show you ads, or use advertising trackers.
+  There is no analytics or tracking library in the app at all.
 - **Donations are by bank transfer.** We see only what any bank transfer
   shows: the payer's name, the amount and the reference.
-  There is no analytics or tracking library in the app at all.
 
 ---
 
@@ -125,7 +125,8 @@ there is none to send.
 
 Most of the services we rely on are overseas. Supabase holds your data in
 Australia; Resend, Expo, Apple, Google, GitHub and Cloudflare are based in the
-United States. We use them under their terms of service, which require them to
+United States; FormSubmit, which delivers the beta sign-up form, is run from
+Sri Lanka. We use them under their terms of service, which require them to
 protect the information they handle for us and to use it only to provide their
 service. We do not send any of them your walks except Supabase, which stores
 them.
@@ -220,6 +221,7 @@ unstripped image can reach our storage.
 | **Expo** (United States) | Delivers app updates | Your phone's platform, app version and IP address when it checks for an update |
 | **GitHub** (United States) | Hosts this website, including the page a sign-in link opens | Your IP address when you visit. The sign-in code never reaches it: it travels in the part of the link a browser does not send. |
 | **Cloudflare** (United States) | Runs the ardeo.nz domain and forwards email sent to it | Messages you send to an `@ardeo.nz` address, on their way to us |
+| **FormSubmit**, run by Devro LABS (Sri Lanka) | Delivers the beta sign-up form on this website to us by email | The name and email address you enter, and your IP address |
 
 Email you send us arrives in a Google Gmail inbox that Plugged Worship uses.
 
@@ -250,6 +252,27 @@ not name you — though your bank will still show your account name.
 
 ardeo is not a registered charity, so donations are not tax-deductible and we
 cannot issue donation receipts for a tax credit.
+
+---
+
+## Joining the beta
+
+While ardeo waits for App Store and Google Play review, you can ask to test it
+early using the form on [ardeo.nz](https://ardeo.nz/#beta). The form asks for
+your **name and email address**, and nothing else.
+
+The form is delivered by **FormSubmit**, a service run by Devro LABS in Sri
+Lanka, which passes your name and email to us as an email to `hello@ardeo.nz`.
+FormSubmit sees what you typed and your IP address in order to send it.
+
+We use your name and email only to send you a beta invite — through Apple's
+TestFlight or Google Play's testing programme, which means giving your email
+address to Apple or Google for that purpose. We do not add you to a mailing
+list or use your details for anything else. Asking to join the beta does not
+create an ardeo account.
+
+We delete beta requests once ardeo is listed in the stores. To have yours
+removed sooner, email [privacy@ardeo.nz](mailto:privacy@ardeo.nz).
 
 ---
 
@@ -323,6 +346,8 @@ tell you in the app or by email before it takes effect.
 
 ### What changed on 24 September 2026
 
+- A new section, **Joining the beta**, says what the beta sign-up form on
+  this website collects, who delivers it, and what we do with it.
 - A new section, **Donations**, says how donations by bank transfer work, who
   receives them, and what donor information we see.
 - The policy now says who is responsible for it — Plugged Worship — and gives a
