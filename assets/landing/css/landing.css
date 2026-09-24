@@ -192,6 +192,41 @@ section[id] {
   text-underline-offset: 4px;
 }
 
+/* Menu button: only shown on narrow screens, where the nav drops down under the bar. */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 0 11px;
+  margin-right: -11px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 1px;
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.nav-open .nav-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-open .nav-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-open .nav-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 /* Hero: the phone stands across the line where the sage header meets the dark About section. */
 
 .hero {
@@ -869,6 +904,33 @@ section[id] {
 
   .nav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 8px 24px 16px;
+    background: rgba(246, 244, 236, 0.97);
+    border-bottom: 1px solid rgba(31, 38, 29, 0.08);
+  }
+
+  .nav-open .nav {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 14px 0;
+    font-size: 1.0625rem;
+  }
+
+  .nav a + a {
+    border-top: 1px solid var(--line);
+  }
+
+  .nav-toggle {
+    display: flex;
   }
 
   .site-header {
@@ -876,8 +938,12 @@ section[id] {
   }
 
   .header-inner {
-    justify-content: space-between;
     height: 64px;
+    gap: 16px;
+  }
+
+  .header-inner .btn {
+    margin-left: auto;
   }
 
   .hero {

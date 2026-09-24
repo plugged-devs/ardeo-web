@@ -19,11 +19,14 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="logo" href="/"><img src="/assets/landing/images/logo-ardeo.png" alt="ardeo" /></a>
-      <nav class="nav" aria-label="Page">
+      <nav class="nav" id="site-nav" aria-label="Page">
         <a href="#about">About</a>
         <a href="#walk">How it works</a>
       </nav>
       <a class="btn btn-ember btn-small" href="#beta">Join the beta</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
@@ -121,8 +124,8 @@
             <dd>The line you walked is never uploaded, at any setting. Our server has nowhere to store one.</dd>
           </div>
           <div data-reveal style="--i: 3">
-            <dt>Free to use, funded by donations</dt>
-            <dd>ardeo costs nothing to use, with no paid tier. It was initiated by Plugged Worship, an NZ-based Korean missional worship group, and its running costs are covered by <a href="#donate">donations</a>.</dd>
+            <dt>Free to use</dt>
+            <dd>ardeo costs nothing to use, with no paid tier. It was initiated by Plugged Worship, an NZ-based Korean missional worship group.</dd>
           </div>
           <div data-reveal style="--i: 4">
             <dt>Private means private</dt>
@@ -306,6 +309,30 @@
             say('Your request didn’t send. Check your connection and try again, or email hello@ardeo.nz.', 'error');
           })
           .then(function () { button.disabled = false; });
+      });
+    })();
+    // Narrow screens hide the nav behind a menu button.
+    (function () {
+      var header = document.querySelector('.site-header');
+      var toggle = header.querySelector('.nav-toggle');
+
+      function setOpen(open) {
+        header.classList.toggle('nav-open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      }
+
+      toggle.addEventListener('click', function () {
+        setOpen(!header.classList.contains('nav-open'));
+      });
+      header.querySelectorAll('.nav a').forEach(function (link) {
+        link.addEventListener('click', function () { setOpen(false); });
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && header.classList.contains('nav-open')) {
+          setOpen(false);
+          toggle.focus();
+        }
       });
     })();
   </script>
