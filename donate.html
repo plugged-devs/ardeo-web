@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate to ardeo</title>
+  <meta name="description" content="Bank details for donating to ardeo's running costs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/landing/css/landing.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="/"><img src="/assets/landing/images/logo-ardeo.png" alt="ardeo" /></a>
+      <nav class="nav" aria-label="Page">
+        <a href="/#about">About</a>
+        <a href="/#walk">How it works</a>
+      </nav>
+      <a class="btn btn-ember btn-small" href="/#beta">Join the beta</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="donate-page">
+      <div class="wrap">
+        <h1>Donate to ardeo</h1>
+        <p class="donate-lede">ardeo is free, and it will stay free. Running it still costs money, with maintenance and operating fees. To give, make a bank transfer to this account.</p>
+
+        <dl class="bank">
+          <div>
+            <dt>Account name</dt>
+            <dd>SOOYONG KIM</dd>
+          </div>
+          <div>
+            <dt>Account number</dt>
+            <dd class="bank-number">
+              <span id="bank-number">01-0171-0531885-48</span>
+              <button class="copy" type="button" data-copy="bank-number">Copy</button>
+            </dd>
+          </div>
+          <div>
+            <dt>Reference</dt>
+            <dd>Your name, or leave blank to give anonymously</dd>
+          </div>
+        </dl>
+
+        <p class="donate-note">Donations go to Sooyong Kim and are put towards ardeo&rsquo;s running costs. ardeo isn&rsquo;t a registered charity, so donations aren&rsquo;t tax-deductible. Your bank will show us your account name and the reference, and we keep that only as a record of donations. See the <a href="/privacy.html#donations">privacy policy</a>.</p>
+
+        <p class="donate-back"><a href="/">Back to ardeo</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="/assets/landing/images/logo-ardeo.png" alt="ardeo" />
+        <p>Contact: <a href="mailto:hello@ardeo.nz">hello@ardeo.nz</a></p>
+        <p>&copy; 2026 Sooyong Kim</p>
+      </div>
+      <div class="supporter">
+        <p>Supported by</p>
+        <img src="/assets/landing/images/plugged-worship.webp" width="528" height="134" alt="Plugged Worship" />
+      </div>
+      <nav aria-label="Footer">
+        <a href="/privacy.html">Privacy policy</a>
+        <a href="/support.html">Support</a>
+        <a href="https://forms.gle/fW9oL4fAehYqaG3SA" target="_blank" rel="noopener">Feedback</a>
+        <a href="/delete-account.html">Delete your account</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      document.querySelectorAll('[data-copy]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          var text = document.getElementById(button.getAttribute('data-copy')).textContent.trim();
+          if (!navigator.clipboard) return;
+          navigator.clipboard.writeText(text).then(function () {
+            button.textContent = 'Copied';
+            setTimeout(function () { button.textContent = 'Copy'; }, 2000);
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

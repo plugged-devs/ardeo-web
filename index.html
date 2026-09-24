@@ -3,332 +3,310 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ardeo — Turn your walk into prayer</title>
-  <meta name="description" content="A prayer-walk app for New Zealand. You walk, it records your route, and the map fills in." />
+  <title>ardeo — pray over your streets as you walk them</title>
+  <meta name="description" content="ardeo records your prayer walk and shades in the streets you covered. Walk with your church and watch your town fill in." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/landing/css/landing.css" />
+  <script>
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('reveal-on');
+    }
+  </script>
 </head>
 <body>
   <header class="site-header">
-    <div class="header-inner">
+    <div class="wrap header-inner">
       <a class="logo" href="/"><img src="/assets/landing/images/logo-ardeo.png" alt="ardeo" /></a>
-      <nav class="nav">
-        <a href="#hero" class="active" aria-current="true">Features</a>
-        <a href="#how">How It Works</a>
-        <a href="#map">Community Map</a>
-        <a href="#privacy">Privacy &amp; Trust</a>
+      <nav class="nav" aria-label="Page">
+        <a href="#about">About</a>
+        <a href="#walk">How it works</a>
       </nav>
-      <a class="btn btn-header" href="#download">Get the App</a>
+      <a class="btn btn-ember btn-small" href="#beta">Join the beta</a>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="hero">
-      <div class="hero-inner">
+    <section class="hero">
+      <div class="wrap hero-inner">
         <div class="hero-text">
-          <p class="eyebrow"><span class="divider"></span>Aotearoa New Zealand — Contemplative Companion</p>
-          <h1>Turn your walk <em>into</em><br /><em>prayer.</em></h1>
-          <p class="lede">Track quietly, pray intentionally, and witness your community's covered ground. Ardeo rests in your pocket so your full attention stays with God and your neighbourhood.</p>
-          <div class="cta-row">
+          <h1>Pray over your streets as you walk them.</h1>
+          <p class="lede">ardeo records your prayer walk and shades in the streets you covered. Walk alone or with your church, and watch your town fill in.</p>
+
+          <div class="stores">
             <div class="store-buttons">
-              <a class="btn btn-store btn-store-dark" href="#">
+              <span class="store" aria-disabled="true">
                 <img src="/assets/landing/icons/apple.svg" alt="" />
-                App Store
-              </a>
-              <a class="btn btn-store btn-store-light" href="#">
+                <span><small>Download on the</small>App Store</span>
+              </span>
+              <span class="store" aria-disabled="true">
                 <img src="/assets/landing/icons/google-play.png" alt="" />
-                Google Play
-              </a>
+                <span><small>Get it on</small>Google Play</span>
+              </span>
             </div>
-            <span class="fineprint">Requires iOS 16+ or Android 12+</span>
+            <p class="store-note">App pending review. <a href="#beta">Join the beta</a> to try it now.</p>
           </div>
-          <div class="hero-rule"></div>
         </div>
-        <div class="hero-visual">
-          <figure class="photo-frame">
-            <div class="photo">
-              <img class="photo-img" src="/assets/landing/images/hero-sunset-walkers.png" alt="Intercessory prayer walkers silhouetted in evening sunset light across shoreline" />
-              <figcaption>
-                <p class="quote">&ldquo;Where two or three walk together...&rdquo;</p>
-                <p class="meta">Evening Intercession · Te Whanganui-a-Tara</p>
-              </figcaption>
-            </div>
-          </figure>
-          <div class="field-ticket">
-            <img class="ticket-img" src="/assets/landing/images/recording-card.png" alt="Ardeo quiet recording card showing elapsed time and distance" />
-            <div class="ticket-footer">
-              <span class="label"><img src="/assets/landing/icons/lock-shield.svg" alt="" /> Route encrypted &amp; private</span>
-              <span class="accent">Quiet pocket logging</span>
-            </div>
-          </div>
+
+        <figure class="phone phone-hero">
+          <img src="/assets/landing/screens/01-map.webp" width="720" height="1520" alt="The ardeo map of central Auckland, with prayed-over streets shaded orange around Hobson Street and Princes Street." />
+        </figure>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-inner">
+        <div class="about-text">
+          <blockquote class="verse">
+            <p>&ldquo;The fire shall ever be burning upon the altar; it shall never go out.&rdquo;</p>
+            <cite>Leviticus 6:13</cite>
+          </blockquote>
+
+          <h2 class="name">ardeo</h2>
+          <p class="definition"><i>Latin.</i> To burn.</p>
+
+          <p class="triad"><span class="t-walk">Walk.</span><br /><span class="t-pray">Pray.</span><br /><span class="t-burn">Burn.</span></p>
+
+          <p class="mission">Through ardeo, we hope to reignite the fire of prayer in New Zealand. Let&rsquo;s continue to ensure the flame never goes out.</p>
         </div>
       </div>
     </section>
 
-    <section class="philosophy" id="how">
-      <div class="section-inner">
-        <div class="section-head">
-          <p class="eyebrow">The Practice &amp; Discipline</p>
-          <h2>Simple, contemplative, automatic.</h2>
-          <p class="lede">No stopwatch rings, badges, or social leaderboards. Ardeo is built for deliberate, silent prayer under open skies.</p>
-        </div>
+    <section class="walk" id="walk">
+      <div class="wrap walk-inner">
+        <figure class="phone" data-reveal>
+          <img src="/assets/landing/screens/02-mark.webp" width="720" height="1520" loading="lazy" alt="Marking a prayer during a walk: a sheet asks what you're praying for, with choices like restoration, nation, worship, church, family and spiritual warfare." />
+        </figure>
 
-        <div class="narrative-block">
-          <div class="narrative-text">
-            <p class="icon-label"><img src="/assets/landing/icons/footprint.svg" alt="" width="17" /> DISCREET TRACKING</p>
-            <h3>Walk quietly. Never fiddle with a screen.</h3>
-            <p>Slip your phone into your pocket or pack. Ardeo's movement intelligence senses walking cadence, automatically pauses when you pause to pray or speak with neighbours, and intelligently ignores vehicles.</p>
-            <p class="pull-quote">&ldquo;Our intercessory prayer walked over two hours through Wellington hills without once needing to unlock the phone.&rdquo;</p>
-          </div>
-          <div class="narrative-photo">
-            <img src="/assets/landing/images/gravel-path-walkers.png" alt="Prayer walkers walking gravel paths with afternoon shadows" />
-            <span class="caption">Cadence detection · 0 distractions</span>
-          </div>
-        </div>
-
-        <div class="split-cards">
-          <div class="card card-light">
-            <div>
-              <p class="icon-label"><img src="/assets/landing/icons/chart.svg" alt="" width="12" /> HONEST MEASUREMENT</p>
-              <h3>Quiet records. No noisy badges.</h3>
-              <p>See your elapsed time, distance covered, and pins where you laid down intercessory prayer for specific streets, homes, or institutions. Clean and dignified.</p>
-            </div>
-            <div class="stat-panel">
-              <img src="/assets/landing/images/recording-card.png" alt="Quiet walk stats UI panel" />
-            </div>
-          </div>
-
-          <div class="card card-dark">
-            <div>
-              <p class="icon-label"><img src="/assets/landing/icons/flame-small.svg" alt="" width="13" /> ARDEO (LATIN)</p>
-              <h3>&ldquo;To burn, to glow with quiet zeal.&rdquo;</h3>
-              <p>Inspired by the disciples walking the road to Emmaus whose hearts burned within them. When we pray walking our streets, light gathers step by step over our common ground.</p>
-            </div>
-            <div class="ember-panel">
-              <div class="photo">
-                <img src="/assets/landing/images/campfire-flame.png" alt="Warm wood campfire ember flame" />
-                <span class="caption">Luke 24:32 · Heart ablaze for the city</span>
-              </div>
-            </div>
-          </div>
+        <div class="walk-text">
+          <h2 data-reveal style="--i: 1">How a walk works</h2>
+          <ol class="steps">
+            <li data-reveal style="--i: 2">
+              <h3>Start a walk</h3>
+              <p>Tap the flame and put your phone away. ardeo records the route while you pray.</p>
+            </li>
+            <li data-reveal style="--i: 3">
+              <h3>Mark what you're praying for</h3>
+              <p>Stopped outside a school or a church? Pick what you're praying for, add a note if you like, and keep walking.</p>
+            </li>
+            <li data-reveal style="--i: 4">
+              <h3>See the streets you covered</h3>
+              <p>When you finish, the streets you walked shade in on the map. Switch between everyone's prayer and just your own.</p>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
 
-    <section class="community" id="map">
-      <div class="community-inner">
-        <div class="map-plate">
-          <div class="sheet">
-            <img src="/assets/landing/images/map-queen-st.png" alt="Map of Queen St and Vulcan Lane with covered prayer walking route" />
-            <div class="map-label">
-              <div class="place">
-                <img src="/assets/landing/icons/map-pin.svg" alt="" />
-                <div>
-                  <p class="name">St Matthew &amp; St Paul's Parish Field</p>
-                  <p class="addr">Queen St, Vulcan Lane &amp; High St · Auckland Central</p>
-                </div>
-              </div>
-              <span class="stat">48.2 km covered</span>
-            </div>
-          </div>
+    <section class="together">
+      <div class="wrap together-inner">
+        <div class="together-text">
+          <h2 data-reveal>Walk with your church</h2>
+          <p data-reveal style="--i: 1">Start a group for your church, small group or ministry team. Share walks to the group and see the ground you've covered together.</p>
         </div>
-
-        <div class="community-story">
-          <p class="eyebrow">Communal Coverage</p>
-          <h2>Watch the map fill <em>with prayer.</em></h2>
-          <p class="lede">Gather with your parish, home church, or praying companions. As individuals walk their daily commutes or neighbourhood paths, Ardeo quietly stitches them into a living canopy of blessing.</p>
-
-          <ul class="feature-list">
-            <li>
-              <span class="feature-icon"><img src="/assets/landing/icons/light.svg" alt="" /></span>
-              <div>
-                <h4>Living neighbourhood light</h4>
-                <p>Streets warm gently as prayers are spoken over local schools, public benches, and civic squares.</p>
-              </div>
-            </li>
-            <li>
-              <span class="feature-icon green"><img src="/assets/landing/icons/people.svg" alt="" /></span>
-              <div>
-                <h4>Whānau connection</h4>
-                <p>Co-ordinate collective prayer days across geographical wards without competitive rivalry.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <figure class="phone" data-reveal style="--i: 2">
+          <img src="/assets/landing/screens/03-group.webp" width="720" height="1520" loading="lazy" alt="The Plugged Worship group page, showing a recent walk shared to the group with its distance, time and blocks covered." />
+        </figure>
       </div>
     </section>
 
     <section class="privacy" id="privacy">
-      <div class="section-head">
-        <span class="privacy-icon"><img src="/assets/landing/icons/shield.svg" alt="" /></span>
-        <p class="eyebrow">Sacred Ground &amp; Personal Safety</p>
-        <h2>Our Privacy Charter</h2>
-        <p class="lede">GPS recording touches homes, routines, and families. Ardeo was crafted with non-negotiable architectural privacy from day one.</p>
-      </div>
-
-      <div class="charter-card">
-        <div class="pillars">
-          <div class="pillar">
-            <p class="eyebrow">Commitment 01</p>
-            <h3>Coarse coverage, never raw paths.</h3>
-            <p>Your minute-by-minute trajectory is never uploaded or published. Only aggregate covered street segments are lit on the communal map to safeguard your doorstep.</p>
+      <div class="wrap">
+        <h2 data-reveal>What ardeo keeps, and what it doesn't</h2>
+        <p class="privacy-intro" data-reveal style="--i: 1">A prayer walk is a record of where you were. We built ardeo so that record stays as small as it can be.</p>
+        <dl class="facts">
+          <div data-reveal style="--i: 2">
+            <dt>Your route stays on your phone</dt>
+            <dd>The line you walked is never uploaded, at any setting. Our server has nowhere to store one.</dd>
           </div>
-          <div class="pillar">
-            <p class="eyebrow">Commitment 02</p>
-            <h3>You choose who sees what.</h3>
-            <p>Every single walk can be completely private, shared strictly with verified companions, or contributed to your parish field. Switch visibility whenever you like.</p>
+          <div data-reveal style="--i: 3">
+            <dt>Free to use, funded by donations</dt>
+            <dd>ardeo costs nothing to use, with no paid tier. It was initiated by Plugged Worship, an NZ-based Korean missional worship group, and its running costs are covered by <a href="#donate">donations</a>.</dd>
           </div>
-          <div class="pillar">
-            <p class="eyebrow">Commitment 03</p>
-            <h3>Zero ads, zero data brokers.</h3>
-            <p>We do not run advertising networks, monetize location telemetry, or harvest intercessory notes. Your prayers and physical steps remain sacred.</p>
+          <div data-reveal style="--i: 4">
+            <dt>Private means private</dt>
+            <dd>A private walk is seen by nobody but you. Your marks and their photos never leave your phone.</dd>
           </div>
-        </div>
-
-        <div class="auth-strip">
-          <span class="label"><img src="/assets/landing/icons/key.svg" alt="" /> Passwordless, frictionless entry:</span>
-          <div class="auth-buttons">
-            <span class="btn"><img src="/assets/landing/icons/google.png" alt="" /> Google</span>
-            <span class="btn"><img src="/assets/landing/icons/apple-id.svg" alt="" /> Apple ID</span>
-            <span class="btn"><img src="/assets/landing/icons/magic-link.svg" alt="" /> Magic Link</span>
+          <div data-reveal style="--i: 5">
+            <dt>No ads, no tracking</dt>
+            <dd>We don't sell your data, show ads, or put any analytics in the app. Sign in with Apple, Google or an emailed link.</dd>
           </div>
-        </div>
+        </dl>
+        <p class="privacy-more" data-reveal style="--i: 2"><a href="/privacy.html">Read the full privacy policy</a></p>
       </div>
     </section>
 
     <section class="testimonial">
-      <div class="divider"></div>
-      <blockquote>&ldquo;Walking our suburb with ardeo changed how we see our neighbours. It is gentle, quiet, and deeply encouraging to watch light gathering over our streets week after week.&rdquo;</blockquote>
-      <cite>Tamati &amp; Rachel M.</cite>
-      <p class="role">Prayer Walk Coordinators · Te Whanganui-a-Tara (Wellington)</p>
+      <figure class="wrap">
+        <blockquote data-reveal>&ldquo;Walking our suburb with ardeo changed how we see our neighbours. It's gentle, quiet, and encouraging to watch the map fill in over our streets week after week.&rdquo;</blockquote>
+        <figcaption data-reveal style="--i: 1">
+          <strong>Alex Huh</strong>
+          <span>Audio Engineer, Plugged Worship</span>
+        </figcaption>
+      </figure>
     </section>
 
-    <section class="final-cta" id="download">
-      <div class="cta-inner">
-        <div class="cta-text">
-          <p class="eyebrow">Begin Today</p>
-          <h2>Start your first prayer walk <em>today.</em></h2>
-          <p class="lede">Step into your neighbourhood with peace. Free for individual walkers on iOS and Android across Aotearoa.</p>
-          <div class="cta-row">
-            <a class="btn btn-cta-primary" href="#">
-              <img src="/assets/landing/icons/apple.svg" alt="" />
-              Download on iOS
-            </a>
-            <a class="btn btn-cta-secondary" href="#">
-              <img src="/assets/landing/icons/google-play.png" alt="" />
-              Get on Android
-            </a>
-          </div>
-          <p class="fineprint">Requires iOS 16+ or Android 12+. Free for individual intercessors.</p>
+    <section class="beta" id="beta">
+      <div class="wrap beta-inner">
+        <div class="beta-text" data-reveal>
+          <h2>Join the beta</h2>
+          <p>ardeo is waiting on App Store and Google Play review. Until it's listed, you can test it early. Leave your name and email and we'll send you an invite.</p>
         </div>
-        <div class="field-card">
-          <div class="qr-wrap">
-            <img src="/assets/landing/icons/qr-code.svg" alt="QR code to download ardeo" />
-          </div>
-          <h4>Scan field card</h4>
-          <p>Instant camera hand-off to mobile installation</p>
+
+        <form class="beta-form" id="beta-form" data-reveal style="--i: 1" action="https://formsubmit.co/hello@ardeo.nz" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="ardeo beta request" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <label for="beta-name">Name</label>
+          <input id="beta-name" name="name" type="text" autocomplete="name" required />
+
+          <label for="beta-email">Email</label>
+          <input id="beta-email" name="email" type="email" autocomplete="email" required />
+
+          <button class="btn btn-ember" type="submit">Join the beta</button>
+          <p class="form-status" id="beta-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+    <section class="feedback" id="feedback">
+      <div class="wrap feedback-inner">
+        <div class="feedback-text">
+          <h2 data-reveal>Tell us what you think</h2>
+          <p data-reveal style="--i: 1">Found a bug, or have an idea that would make ardeo better? It takes a couple of minutes, and we read every response.</p>
+        </div>
+        <a class="btn btn-outline" data-reveal style="--i: 2" href="https://forms.gle/fW9oL4fAehYqaG3SA" target="_blank" rel="noopener">Give feedback</a>
+      </div>
+    </section>
+
+    <section class="donate" id="donate">
+      <div class="wrap donate-inner">
+        <div class="donate-text">
+          <h2 data-reveal>Help keep the flame going</h2>
+          <p data-reveal style="--i: 1">ardeo is free, and it will stay free. Running it still costs money, with maintenance and operating fees. Any amount of coverage will be greatly appreciated.</p>
+        </div>
+        <div class="donate-action" data-reveal style="--i: 2">
+          <a class="btn btn-ember" href="/donate.html">Donate by bank transfer</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="/assets/landing/images/logo-ardeo.png" alt="ardeo" />
-          <p>To burn, to glow with quiet devotion. A contemplative companion anchoring intercessory prayer in the physical landscapes, streets, and communities of Aotearoa New Zealand.</p>
-          <p class="maori"><img src="/assets/landing/icons/leaf.svg" alt="" /> He kaitiaki tātou mō te whenua</p>
-        </div>
-
-        <div class="footer-col">
-          <h5>Explore &amp; Learn</h5>
-          <ul>
-            <li>Quiet Walk Tracking</li>
-            <li>Contemplative Practice</li>
-            <li>Communal Coverage Map</li>
-            <li>Parish Field Kits</li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h5>Privacy &amp; Stewardship</h5>
-          <p>Your walk remains personal. We preserve broad territory coverage and communal intercession without recording or monetizing individual trajectory trails.</p>
-          <div class="footer-links">
-            <a href="/privacy.html">Privacy Charter</a>
-            <a href="#">Terms of Service</a>
-            <a href="/support.html">Support &amp; Contact</a>
-          </div>
-        </div>
+  <footer class="site-footer" id="contact">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="/assets/landing/images/logo-ardeo.png" alt="ardeo" />
+        <p>Contact: <a href="mailto:hello@ardeo.nz">hello@ardeo.nz</a></p>
+        <p>&copy; 2026 Sooyong Kim</p>
       </div>
-
-      <div class="footer-bottom">
-        <span>© 2026 ardeo Aotearoa. Created with reverence for intercessors across Te Ika-a-Māui and Te Waipounamu.</span>
-        <span>He aroha ki te whenua, he tūmanako ki te tangata.</span>
+      <div class="supporter">
+        <p>Supported by</p>
+        <img src="/assets/landing/images/plugged-worship.webp" width="528" height="134" alt="Plugged Worship" />
       </div>
+      <nav aria-label="Footer">
+        <a href="/privacy.html">Privacy policy</a>
+        <a href="/support.html">Support</a>
+        <a href="https://forms.gle/fW9oL4fAehYqaG3SA" target="_blank" rel="noopener">Feedback</a>
+        <a href="/delete-account.html">Delete your account</a>
+      </nav>
     </div>
   </footer>
 
   <script>
+    // The About section's one scroll moment: the fire brightens as the
+    // section arrives, and Walk. Pray. Burn. light up in turn as each word
+    // reaches the middle of the screen. Scrolling back dims them again.
     (function () {
-      var links = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
-      var targets = [];
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var about = document.getElementById('about');
+      var words = Array.prototype.slice.call(about.querySelectorAll('.triad span'));
+      var queued = false;
 
-      links.forEach(function (link) {
-        var section = document.querySelector(link.getAttribute('href'));
-        if (section) targets.push({ link: link, section: section });
-      });
-      if (!targets.length) return;
+      function clamp(n) { return n < 0 ? 0 : n > 1 ? 1 : n; }
 
-      targets.sort(function (a, b) {
-        return a.section.offsetTop - b.section.offsetTop;
-      });
-
-      function setActive(link) {
-        links.forEach(function (l) {
-          var on = l === link;
-          l.classList.toggle('active', on);
-          if (on) {
-            l.setAttribute('aria-current', 'true');
-          } else {
-            l.removeAttribute('aria-current');
-          }
+      function update() {
+        queued = false;
+        var vh = window.innerHeight;
+        var top = about.getBoundingClientRect().top;
+        about.style.setProperty('--glow', clamp((vh - top) / (vh * 0.9)).toFixed(3));
+        words.forEach(function (word) {
+          var y = word.getBoundingClientRect().top;
+          word.style.setProperty('--lit', clamp((vh * 0.75 - y) / (vh * 0.18)).toFixed(3));
         });
       }
 
-      var offsets = [];
-      function measure() {
-        offsets = targets.map(function (t) { return t.section.getBoundingClientRect().top + window.scrollY; });
+      function queue() {
+        if (!queued) { queued = true; window.requestAnimationFrame(update); }
       }
 
-      function update() {
-        var probe = window.scrollY + 100;
-        var current = 0;
-        for (var i = 0; i < offsets.length; i++) {
-          if (offsets[i] <= probe) current = i;
-        }
-        setActive(targets[current].link);
-      }
-
-      function remeasure() { measure(); update(); }
-
-      window.addEventListener('scroll', update, { passive: true });
-      window.addEventListener('resize', remeasure);
-      window.addEventListener('load', remeasure);
-
-      // Images and webfonts settle after this script runs, shifting section offsets.
-      if (window.ResizeObserver) {
-        new ResizeObserver(remeasure).observe(document.body);
-      }
-
-      links.forEach(function (link) {
-        link.addEventListener('click', function () { setActive(link); });
-      });
-
-      measure();
+      window.addEventListener('scroll', queue, { passive: true });
+      window.addEventListener('resize', queue);
       update();
+    })();
+
+    // Everything else fades up once as it scrolls into view. The html
+    // class that hides it is only set in <head> when this can run.
+    (function () {
+      if (!document.documentElement.classList.contains('reveal-on')) return;
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-in');
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.15 });
+      document.querySelectorAll('[data-reveal]').forEach(function (el) { observer.observe(el); });
+    })();
+
+
+    (function () {
+      var form = document.getElementById('beta-form');
+      var status = document.getElementById('beta-status');
+      var button = form.querySelector('button');
+
+      function say(text, kind) {
+        status.textContent = text;
+        status.className = 'form-status' + (kind ? ' is-' + kind : '');
+      }
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var name = form.elements.name.value.trim();
+        var email = form.elements.email.value.trim();
+
+        if (!name) { say('Enter your name.', 'error'); form.elements.name.focus(); return; }
+        if (!form.elements.email.checkValidity() || !email) {
+          say('Enter an email address we can send the invite to.', 'error');
+          form.elements.email.focus();
+          return;
+        }
+
+        button.disabled = true;
+        say('Sending…');
+
+        fetch('https://formsubmit.co/ajax/hello@ardeo.nz', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            _subject: 'ardeo beta request',
+            _template: 'table',
+            _honey: form.elements._honey.value
+          })
+        })
+          .then(function (res) { return res.json().then(function (body) { return { ok: res.ok, body: body }; }); })
+          .then(function (result) {
+            if (!result.ok || String(result.body.success) !== 'true') throw new Error('rejected');
+            form.reset();
+            say('Thanks, ' + name + '. We’ll send your invite to ' + email + '.', 'ok');
+          })
+          .catch(function () {
+            say('Your request didn’t send. Check your connection and try again, or email hello@ardeo.nz.', 'error');
+          })
+          .then(function () { button.disabled = false; });
+      });
     })();
   </script>
 </body>

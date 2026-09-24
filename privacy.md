@@ -37,6 +37,8 @@ We are the agency responsible for your personal information under the
   suggests a religious belief, and anyone who can see your profile or your
   walks can draw that conclusion. We treat everything here with that in mind.
 - We do not sell your information, show you ads, or use advertising trackers.
+- **Donations are by bank transfer.** We see only what any bank transfer
+  shows: the payer's name, the amount and the reference.
   There is no analytics or tracking library in the app at all.
 
 ---
@@ -225,6 +227,32 @@ We do not use advertising networks, analytics SDKs, or third-party trackers.
 
 ---
 
+## Donations
+
+ardeo is free to use. Its running costs — servers, email, and the App Store and
+Google Play fees — are covered by donations, made by bank transfer to the
+account shown on [ardeo.nz/donate](https://ardeo.nz/donate.html). Donating is entirely separate
+from the app: it has nothing to do with your ardeo account, and giving or not
+giving changes nothing about what you can do in the app.
+
+**Who receives it.** The account belongs to **Sooyong Kim**, who runs ardeo,
+and donations are put towards its running costs.
+
+**What we see.** Only what any bank transfer shows the person receiving it: the
+name on the paying account, the amount, the date, and whatever you put in the
+reference and particulars fields. We never see your card or login details, and
+there is no donation form on the website collecting anything from you.
+
+We use those details only to keep a record of donations. We do not add donors
+to a mailing list, link a donation to an ardeo account, or share donor details
+with anyone. If you would rather not be identified, use a reference that does
+not name you — though your bank will still show your account name.
+
+ardeo is not a registered charity, so donations are not tax-deductible and we
+cannot issue donation receipts for a tax credit.
+
+---
+
 ## Keeping and deleting
 
 Walks are kept until you delete them or delete your account.
@@ -295,6 +323,8 @@ tell you in the app or by email before it takes effect.
 
 ### What changed on 24 September 2026
 
+- A new section, **Donations**, says how donations by bank transfer work, who
+  receives them, and what donor information we see.
 - The policy now says who is responsible for it — Plugged Worship — and gives a
   privacy contact, `privacy@ardeo.nz`, in place of a personal email address.
 - It names every service involved, including Resend for sign-in emails, GitHub
