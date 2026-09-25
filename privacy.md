@@ -1,6 +1,6 @@
 # Privacy policy
 
-**ardeo** · Last updated 24 September 2026
+**ardeo** · Last updated 26 September 2026
 
 ardeo records prayer walks. Recording a walk means recording where you walked,
 which is sensitive, and this policy exists to say plainly what happens to that
@@ -193,11 +193,32 @@ the law requires it.
 
 ## Finding people, and being found
 
-Signed-in walkers can search for people by handle or display name, three
-characters minimum. Your display name, handle and photo are visible to anyone
-signed in who finds you.
+Signed-in walkers can search for people **by handle only**, three characters
+minimum. Display names are not searchable, so finding someone means already
+knowing their handle. Groups, by contrast, can be found by name. Your display
+name, handle and photo are visible to anyone signed in who finds you.
 
 Friend requests have to be accepted. A pending request grants nothing.
+
+Once you are friends, **your friends can learn which groups you are in.** The
+app suggests groups to each walker by naming friends of theirs who are already
+in them — "Ana is in this group" — so a friend may see a group of yours
+suggested to them with your name beside it.
+
+### Blocking and reporting
+
+You can **block** any walker. A block works in both directions: it ends any
+friendship or friend request between you, hides each of your walks from the
+other at every sharing setting, public included, and keeps each of you out of
+the other's search results. The walker you block is not told.
+
+You can **report** a walker, a walk or a group. A report records who sent it,
+what it is about, the reason you chose and anything you write. It is emailed to
+us at `hello@ardeo.nz`, through Resend, so that we can review it. Nobody else
+can read a report — not the person or group reported, and not you once it is
+sent — so the walker you report cannot find out it was you. If you delete your
+account, reports you sent are kept, no longer linked to you, because they still
+need answering.
 
 ### Photos you upload
 
@@ -215,7 +236,7 @@ unstripped image can reach our storage.
 | Service | What it does for ardeo | What it sees |
 |---|---|---|
 | **Supabase** (Sydney, Australia) | Database, sign-in and photo storage | Everything described above that is uploaded |
-| **Resend** (United States) | Sends sign-in emails | Your email address and the sign-in message |
+| **Resend** (United States) | Sends sign-in emails, and sends us each report | Your email address and the sign-in message; for a report, what it says and your handle |
 | **Apple** and **Google** | App stores, and sign-in if you use them | Your account with them, and that you use ardeo |
 | **LINZ Basemaps**, run by Toitū Te Whenua Land Information New Zealand | Map imagery | Which areas you look at on the map, and your IP address. Never your walks. |
 | **Expo** (United States) | Delivers app updates | Your phone's platform, app version and IP address when it checks for an update |
@@ -343,6 +364,16 @@ information. If you believe a child under 13 has an account, email
 When this policy changes, we update this page and the date at the top. If a
 change affects what we do with information you have already given us, we will
 tell you in the app or by email before it takes effect.
+
+### What changed on 26 September 2026
+
+- Search finds people by handle only. This page used to say display names were
+  searchable too; they are not.
+- It now says that friends can learn which groups you are in, because the app
+  suggests groups to them by naming friends already in them.
+- A new section, **Blocking and reporting**, says what a block does, what a
+  report records, who reads it, and what happens to your reports if you delete
+  your account.
 
 ### What changed on 24 September 2026
 
