@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "nz.ardeo.app",
+      "sha256_cert_fingerprints": [
+        "B0:2F:E0:B0:64:60:02:F0:2D:95:3E:9A:FE:4E:9F:67:BE:57:A2:CE:AA:17:95:A1:BD:4A:6A:4B:6E:24:98:8D"
+      ]
+    }
+  }
+]
