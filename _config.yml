@@ -1,3 +1,7 @@
 title: ardeo
 description: A prayer-walk app for New Zealand
 theme: jekyll-theme-primer
+exclude:
+  - email/beta_invite.html
+  - email/send_invites.py
+  - email/previews
