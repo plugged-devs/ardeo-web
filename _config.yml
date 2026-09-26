@@ -1,6 +1,10 @@
 title: ardeo
 description: A prayer-walk app for New Zealand
 theme: jekyll-theme-primer
+# Jekyll skips dot-folders unless told otherwise, and the phone's operating
+# system reads the verified-link files from /.well-known/.
+include:
+  - .well-known
 exclude:
   - email/beta_invite.html
   - email/send_invites.py
