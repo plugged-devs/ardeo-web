@@ -32,7 +32,9 @@ it — is deleted along with your account.
 There is no stored route line to delete. ardeo never uploads one — see the
 [privacy policy](./privacy.md).
 
-Data held only on your own phone is removed when you delete the app.
+Deleting in the app also clears your walks, routes included, off that phone.
+If you delete by email instead, whatever is on your phone goes when you
+delete the app, or when someone else signs in to ardeo on it.
 
 ## What does not get deleted
 
