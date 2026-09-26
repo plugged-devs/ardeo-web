@@ -4,7 +4,6 @@ Dry run by default: renders one preview per recipient into previews/ and sends
 nothing. Pass --send to actually send.
 
   IOS_URL=https://testflight.apple.com/join/hTTK9NY3 \
-  ANDROID_URL=https://play.google.com/apps/testing/nz.ardeo.app \
   FROM='ardeo <hello@ardeo.nz>' \
   RESEND_API_KEY=re_... \
   python3 send_invites.py ../beta-requests.csv [--send]
@@ -23,7 +22,7 @@ SUBJECT = "You're in: try ardeo early"
 BATCH_SIZE = 100  # Resend's batch endpoint limit
 
 
-def text_version(name, email, ios_url, android_url):
+def text_version(name, ios_url):
     return f"""Hi {name},
 
 Thanks for opting in to test ardeo!
@@ -34,15 +33,14 @@ ardeo 테스트에 참여해 주셔서 감사합니다!
 
 어제 함께 예배드릴 수 있어서 정말 기뻤습니다. 하나님께서 품게 해 주신 선교적 마음을 일상 속에서도 간직하며 살아가시길 바라며, ardeo가 그 시작이 되기를 소망합니다!
 
-Open this email on your phone and use the link for it.
+Open this email on your iPhone and use the link below.
 
 iPhone
 Install Apple's free TestFlight app when it asks, then tap Accept and Install.
 {ios_url}
 
 Android
-Sign in to Google Play as {email}, tap Become a tester, then install ardeo from Google Play.
-{android_url}
+Sorry, the Android beta is still in preparation. We'll email you again once it's ready.
 
 Have any feedback? Submit them through https://forms.gle/fW9oL4fAehYqaG3SA
 
@@ -51,12 +49,10 @@ hello@ardeo.nz · https://ardeo.nz/privacy
 """
 
 
-def render(template, name, email, ios_url, android_url):
+def render(template, name, ios_url):
     return (template
             .replace("{{name}}", html.escape(name))
-            .replace("{{email}}", html.escape(email))
-            .replace("{{ios_url}}", html.escape(ios_url, quote=True))
-            .replace("{{android_url}}", html.escape(android_url, quote=True)))
+            .replace("{{ios_url}}", html.escape(ios_url, quote=True)))
 
 
 def main():
@@ -66,7 +62,6 @@ def main():
         sys.exit(__doc__)
 
     ios_url = os.environ.get("IOS_URL", "https://testflight.apple.com/join/hTTK9NY3")
-    android_url = os.environ.get("ANDROID_URL", "https://play.google.com/apps/testing/nz.ardeo.app")
     sender = os.environ.get("FROM", "ardeo <hello@ardeo.nz>")
     if not ios_url.startswith("https://testflight.apple.com/join/"):
         sys.exit("Set IOS_URL to the TestFlight public link (https://testflight.apple.com/join/...).")
@@ -80,8 +75,8 @@ def main():
         "to": [email],
         "reply_to": "hello@ardeo.nz",
         "subject": SUBJECT,
-        "html": render(template, name or "friend", email, ios_url, android_url),
-        "text": text_version(name or "friend", email, ios_url, android_url),
+        "html": render(template, name or "friend", ios_url),
+        "text": text_version(name or "friend", ios_url),
     } for name, email in people]
 
     if not send:
@@ -101,12 +96,17 @@ def main():
             headers={
                 "Authorization": f"Bearer {key}",
                 "Content-Type": "application/json",
-                # Re-running the same batch within 24h won't send it twice.
-                "Idempotency-Key": f"ardeo-beta-invite-{start}-{len(chunk)}",
+                # Cloudflare in front of Resend blocks urllib's default User-Agent (error 1010).
+                "User-Agent": "ardeo-beta-invite/1.0",
+                # Re-running the same batch within 24h won't send it twice. Set RUN_ID to send again.
+                "Idempotency-Key": f"{os.environ.get('RUN_ID', 'ardeo-beta-invite')}-{start}-{len(chunk)}",
             },
         )
-        with urllib.request.urlopen(req) as res:
-            body = json.load(res)
+        try:
+            with urllib.request.urlopen(req) as res:
+                body = json.load(res)
+        except urllib.error.HTTPError as e:
+            sys.exit(f"Resend returned {e.code} for the batch starting at {start}: {e.read().decode()}")
         print(f"Sent {len(body.get('data', []))} of {len(chunk)} (batch starting at {start}).")
 
 
