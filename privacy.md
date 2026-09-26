@@ -218,12 +218,33 @@ app suggests groups to each walker by naming friends of theirs who are already
 in them — "Ana is in this group" — so a friend may see a group of yours
 suggested to them with your name beside it.
 
+### People you may know
+
+Before you search, the app suggests walkers you might know: **friends of your
+friends**, and **people in your groups**. Each suggestion says why, by naming
+up to two of *your own* friends or groups — "Friends with Ana", "In Hope Church
+with you".
+
+This works the other way too, and it is worth knowing what it reveals. If you
+are friends with Ana, Ana's other friends may see you suggested to them as
+"Friends with Ana" — so being someone's friend lets their other friends learn,
+one suggestion at a time, that the two of you know each other. It never shows
+anyone a friend list: a suggestion names only the viewer's own friends, at most
+two of them, and a walker is shown at most twenty suggestions. Suggesting
+people in your groups reveals nothing new, since members of a group can already
+see who else is in it.
+
+Nobody is suggested to you who already has a friend request with you in either
+direction, who has blocked you or whom you have blocked, or whose account has
+been deleted. To stop appearing in a particular person's suggestions, block
+them.
+
 ### Blocking and reporting
 
 You can **block** any walker. A block works in both directions: it ends any
 friendship or friend request between you, hides each of your walks from the
 other at every sharing setting, public included, and keeps each of you out of
-the other's search results. The walker you block is not told.
+the other's search results and suggestions. The walker you block is not told.
 
 You can **report** a walker, a walk or a group. A report records who sent it,
 what it is about, the reason you chose and anything you write. It is emailed to
@@ -395,6 +416,9 @@ tell you in the app or by email before it takes effect.
 - A new section, **Blocking and reporting**, says what a block does, what a
   report records, who reads it, and what happens to your reports if you delete
   your account.
+- A new section, **People you may know**, describes the app suggesting friends
+  of your friends and people in your groups, and what that reveals about who
+  you are friends with.
 
 ### What changed on 24 September 2026
 
