@@ -1,6 +1,6 @@
 # Privacy policy
 
-**ardeo** · Last updated 26 September 2026
+**ardeo** · Last updated 27 September 2026
 
 ardeo records prayer walks. Recording a walk means recording where you walked,
 which is sensitive, and this policy exists to say plainly what happens to that
@@ -301,7 +301,7 @@ unstripped image can reach our storage.
 | **Resend** (United States) | Sends sign-in emails, and sends us each report | Your email address and the sign-in message; for a report, what it says and your handle |
 | **Apple** and **Google** | App stores, and sign-in if you use them | Your account with them, and that you use ardeo |
 | **LINZ Basemaps**, run by Toitū Te Whenua Land Information New Zealand | Map imagery | Which areas you look at on the map, and your IP address. Never your walks. |
-| **Expo** (United States) | Delivers app updates | Your phone's platform, app version and IP address when it checks for an update |
+| **Expo** (United States) | Delivers app updates | Your phone's platform, app version and IP address when it checks for an update, and a random identifier the app creates for this install so updates can be rolled out in stages. It is not tied to your account |
 | **GitHub** (United States) | Hosts this website, including the page a sign-in link opens | Your IP address when you visit. The sign-in code never reaches it: it travels in the part of the link a browser does not send. |
 | **Cloudflare** (United States) | Runs the ardeo.nz domain and forwards email sent to it | Messages you send to an `@ardeo.nz` address, on their way to us |
 | **FormSubmit**, run by Devro LABS (Sri Lanka) | Delivers the beta sign-up form on this website to us by email | The name and email address you enter, and your IP address |
@@ -386,8 +386,10 @@ providers' service logs, which can include your email address and IP address,
 are kept by those providers for up to 30 days. Supabase's own backups roll over
 on its schedule. After those periods, no copy that identifies you remains.
 
-Data held only on your own phone goes when you delete the app. We cannot
-recover it for you.
+Deleting in the app also clears your walks, routes included, off that phone.
+Otherwise, data held only on your own phone goes when you delete the app, or
+when a different account signs in to ardeo on it. We cannot recover it for
+you.
 
 ---
 
@@ -428,6 +430,14 @@ information. If you believe a child under 13 has an account, email
 When this policy changes, we update this page and the date at the top. If a
 change affects what we do with information you have already given us, we will
 tell you in the app or by email before it takes effect.
+
+### What changed on 27 September 2026
+
+- Deleting your account in the app now clears your walks off that phone too,
+  and a different account signing in on a phone starts without the last
+  one's walks.
+- The Expo row names the random identifier the app sends when it checks for
+  an update. It was always sent; this page did not say so.
 
 ### What changed on 26 September 2026
 
