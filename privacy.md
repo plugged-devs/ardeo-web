@@ -1,6 +1,6 @@
 # Privacy policy
 
-**ardeo** · Last updated 24 September 2026
+**ardeo** · Last updated 26 September 2026
 
 ardeo records prayer walks. Recording a walk means recording where you walked,
 which is sensitive, and this policy exists to say plainly what happens to that
@@ -69,10 +69,19 @@ and the count is not uploaded.
 hexagons roughly 65 metres across. These record *that* you passed through an
 area, not the path you took through it.
 
-**What you write.** A note on a walk, up to 600 characters.
+**Prayer notes.** What you prayed for on a walk: the categories you pick, and
+anything you write, up to 600 characters each. Each note is pinned to a point
+on your walk, and that point and the time you made the note stay on your
+phone. What the note *says* goes with the walk to whoever you share the walk
+with (see [Who can see what](#who-can-see-what)). The notes on a walk you keep
+private are not uploaded at all.
 
-**Marks.** Anything you mark during a walk — the categories you pick, and any
-photo you attach — stays on your phone. Marks are not uploaded.
+Prayer notes you made before your phone took the 26 September 2026 update were
+made under the promise that they would never leave it, and they still will
+not — whatever you share their walk with.
+
+Walks shared before then could carry a separate note on the walk itself.
+Those notes are still shown with their walks. Nothing writes one any more.
 
 **Your profile.** A display name, a handle, and a photo if you add one.
 
@@ -107,7 +116,9 @@ Your account, profile, groups and walks are stored in one place: our database,
 hosted by **Supabase in Sydney, Australia**.
 
 **Every walk you save is uploaded** once the app has worked out its coverage —
-the statistics, the note, the grid squares, and which audience you chose. That
+the statistics, the grid squares, which audience you chose, the note on the
+walk if it is an older one that has one, and for a walk you share, what its
+prayer notes say. That
 includes walks set to private. What stops anyone else reading a private walk is
 row-level security enforced by the database itself, not a filter in the app, and
 it is tested against a real database rather than a stand-in.
@@ -119,7 +130,8 @@ nothing to leak.
 
 If you sign in on a new phone, your saved walks come back to it from our
 database — with their statistics and grid squares, but no route line, because
-there is none to send.
+there is none to send, and no prayer notes, because without the point each one
+was pinned to there is nowhere on the walk to put them.
 
 ### Information that leaves New Zealand
 
@@ -144,7 +156,8 @@ they are not in, and a group does not see one you shared to friends.
 | The line you walked | On your phone only | Never | Never | Never |
 | The grid squares you covered | Yes | If shared to friends | If shared to that group | If shared publicly |
 | Distance, duration, date and time | Yes | If shared to friends | If shared to that group | If shared publicly |
-| Your note | Yes | If shared to friends | If shared to that group | If shared publicly |
+| What your prayer notes say | Yes | If shared to friends | If shared to that group | If shared publicly |
+| Where and when you made each prayer note | On your phone only | Never | Never | Never |
 | Display name, handle, photo | Yes | Yes | Yes | Yes |
 | Coverage totals for an area | Yes | Yes | Yes | Yes |
 
@@ -193,11 +206,32 @@ the law requires it.
 
 ## Finding people, and being found
 
-Signed-in walkers can search for people by handle or display name, three
-characters minimum. Your display name, handle and photo are visible to anyone
-signed in who finds you.
+Signed-in walkers can search for people **by handle only**, three characters
+minimum. Display names are not searchable, so finding someone means already
+knowing their handle. Groups, by contrast, can be found by name. Your display
+name, handle and photo are visible to anyone signed in who finds you.
 
 Friend requests have to be accepted. A pending request grants nothing.
+
+Once you are friends, **your friends can learn which groups you are in.** The
+app suggests groups to each walker by naming friends of theirs who are already
+in them — "Ana is in this group" — so a friend may see a group of yours
+suggested to them with your name beside it.
+
+### Blocking and reporting
+
+You can **block** any walker. A block works in both directions: it ends any
+friendship or friend request between you, hides each of your walks from the
+other at every sharing setting, public included, and keeps each of you out of
+the other's search results. The walker you block is not told.
+
+You can **report** a walker, a walk or a group. A report records who sent it,
+what it is about, the reason you chose and anything you write. It is emailed to
+us at `hello@ardeo.nz`, through Resend, so that we can review it. Nobody else
+can read a report — not the person or group reported, and not you once it is
+sent — so the walker you report cannot find out it was you. If you delete your
+account, reports you sent are kept, no longer linked to you, because they still
+need answering.
 
 ### Photos you upload
 
@@ -215,7 +249,7 @@ unstripped image can reach our storage.
 | Service | What it does for ardeo | What it sees |
 |---|---|---|
 | **Supabase** (Sydney, Australia) | Database, sign-in and photo storage | Everything described above that is uploaded |
-| **Resend** (United States) | Sends sign-in emails | Your email address and the sign-in message |
+| **Resend** (United States) | Sends sign-in emails, and sends us each report | Your email address and the sign-in message; for a report, what it says and your handle |
 | **Apple** and **Google** | App stores, and sign-in if you use them | Your account with them, and that you use ardeo |
 | **LINZ Basemaps**, run by Toitū Te Whenua Land Information New Zealand | Map imagery | Which areas you look at on the map, and your IP address. Never your walks. |
 | **Expo** (United States) | Delivers app updates | Your phone's platform, app version and IP address when it checks for an update |
@@ -343,6 +377,24 @@ information. If you believe a child under 13 has an account, email
 When this policy changes, we update this page and the date at the top. If a
 change affects what we do with information you have already given us, we will
 tell you in the app or by email before it takes effect.
+
+### What changed on 26 September 2026
+
+- **Prayer notes now go with a walk you share.** What a note says reaches the
+  same people the walk does — never wider, and nobody at all for a walk you
+  keep private. Where and when you made it still never leave your phone.
+- The note on a walk and the prayer notes were two different things, one
+  shared and one not, with nearly the same name. There is one kind of note
+  now, and it is a prayer note.
+- **Nothing you had already written changes.** Prayer notes made before your
+  phone took this update stay on it, as they were promised to.
+- Search finds people by handle only. This page used to say display names were
+  searchable too; they are not.
+- It now says that friends can learn which groups you are in, because the app
+  suggests groups to them by naming friends already in them.
+- A new section, **Blocking and reporting**, says what a block does, what a
+  report records, who reads it, and what happens to your reports if you delete
+  your account.
 
 ### What changed on 24 September 2026
 
