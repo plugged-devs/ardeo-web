@@ -88,6 +88,14 @@ Those notes are still shown with their walks. Nothing writes one any more.
 **Groups.** The groups you create or join, your role in each, and — for a group
 you run — its name, description, logo and cover picture.
 
+**Planned walks.** A group's admins can plan a walk for the group: a title, a
+date and time, where to meet, and a note. The meeting place is words you type,
+never a point on a map. When you say you are coming, that is recorded against
+your account. When you finish a walk that started close to a planned walk's
+time — from half an hour before to three hours after — the app offers to count
+it toward that walk, and records which planned walk it counted toward if you
+say yes.
+
 **Account details.** Your email address, and the name your sign-in provider
 gives us. If you use Sign in with Apple you can choose to hide your email, and
 we receive a relay address instead of the real one.
@@ -163,6 +171,26 @@ they are not in, and a group does not see one you shared to friends.
 
 People in a group can see who else is in it, and each member's role.
 
+**A walk posted as a group.** A group's admins can post one of their walks as
+the group. It is still their walk, seen by exactly the audience they chose for
+it, and it always says who walked: the feed shows the group's name and logo,
+with "Walked by" and the admin's name beneath. It can only be done for a walk
+shared to that group or to everyone, and the group's name comes off it if the
+admin stops being one.
+
+**Planned walks are seen by the group they belong to and nobody else**: what
+the walk is, when, where to meet, who planned it, and who has said they are
+coming. If you leave the group, you drop off every "coming" list in it.
+
+A walk you count toward a planned walk is still seen by exactly the audience
+you chose for it. People in that group who can see the walk also see which
+planned walk it counted toward; anyone else who can see it is not told. The
+planned walk's totals — how many walked, how far together, how much ground —
+and its combined map are added up for each reader from only the walks that
+reader can already see, so a walk you kept private counts in your own view of
+the totals and nobody else's. The combined map is grid squares, like every
+other map in ardeo, with no routes and no start points.
+
 ### What sharing a walk actually reveals
 
 A shared walk travels as the list of 65-metre squares it passed through. That is
@@ -218,14 +246,35 @@ app suggests groups to each walker by naming friends of theirs who are already
 in them — "Ana is in this group" — so a friend may see a group of yours
 suggested to them with your name beside it.
 
+### People you may know
+
+Before you search, the app suggests walkers you might know: **friends of your
+friends**, and **people in your groups**. Each suggestion says why, by naming
+up to two of *your own* friends or groups — "Friends with Ana", "In Hope Church
+with you".
+
+This works the other way too, and it is worth knowing what it reveals. If you
+are friends with Ana, Ana's other friends may see you suggested to them as
+"Friends with Ana" — so being someone's friend lets their other friends learn,
+one suggestion at a time, that the two of you know each other. It never shows
+anyone a friend list: a suggestion names only the viewer's own friends, at most
+two of them, and a walker is shown at most twenty suggestions. Suggesting
+people in your groups reveals nothing new, since members of a group can already
+see who else is in it.
+
+Nobody is suggested to you who already has a friend request with you in either
+direction, who has blocked you or whom you have blocked, or whose account has
+been deleted. To stop appearing in a particular person's suggestions, block
+them.
+
 ### Blocking and reporting
 
 You can **block** any walker. A block works in both directions: it ends any
 friendship or friend request between you, hides each of your walks from the
 other at every sharing setting, public included, and keeps each of you out of
-the other's search results. The walker you block is not told.
+the other's search results and suggestions. The walker you block is not told.
 
-You can **report** a walker, a walk or a group. A report records who sent it,
+You can **report** a walker, a walk, a group or a planned walk. A report records who sent it,
 what it is about, the reason you chose and anything you write. It is emailed to
 us at `hello@ardeo.nz`, through Resend, so that we can review it. Nobody else
 can read a report — not the person or group reported, and not you once it is
@@ -321,7 +370,9 @@ profile disappears from search, from your friends and from your groups at once.
 Everything else is removed from our database within 30 days.
 
 Deleting removes your profile, your photo, your walks and their statistics,
-your notes, and your grid squares. If you are the only owner of a group, the
+your notes, your grid squares, the walks you planned for a group and your
+answers to say you are coming. Planned walks and answers are hidden from
+everyone the moment you delete. If you are the only owner of a group, the
 group — and everyone's membership in it — is deleted along with your account.
 
 The **coverage totals you contributed are not reversed** — a coverage count
@@ -380,6 +431,12 @@ tell you in the app or by email before it takes effect.
 
 ### What changed on 26 September 2026
 
+- A new kind of record, **planned walks**: what a group's admins plan, who
+  says they are coming, and which planned walk a walk of yours counted
+  toward — who sees each of those, and what deleting your account does to
+  them. A planned walk can be reported, like a walk or a group.
+- A group's admins can post a walk **as the group**. The walk still says who
+  walked and reaches only the audience it was shared with.
 - **Prayer notes now go with a walk you share.** What a note says reaches the
   same people the walk does — never wider, and nobody at all for a walk you
   keep private. Where and when you made it still never leave your phone.
@@ -395,6 +452,9 @@ tell you in the app or by email before it takes effect.
 - A new section, **Blocking and reporting**, says what a block does, what a
   report records, who reads it, and what happens to your reports if you delete
   your account.
+- A new section, **People you may know**, describes the app suggesting friends
+  of your friends and people in your groups, and what that reveals about who
+  you are friends with.
 
 ### What changed on 24 September 2026
 

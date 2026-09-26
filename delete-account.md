@@ -23,6 +23,7 @@ verify another way rather than ask you to reveal it.
 - Your profile, display name, handle and photo
 - Every walk you recorded, including its statistics and note
 - The coverage squares recorded against your walks
+- The walks you planned for a group, and your answers saying you were coming
 - Anything else you wrote in the app
 
 If you're the only owner of a group, the group — and everyone's membership in
