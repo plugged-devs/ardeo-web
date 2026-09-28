@@ -280,7 +280,8 @@ us at `hello@ardeo.nz`, through Resend, so that we can review it. Nobody else
 can read a report — not the person or group reported, and not you once it is
 sent — so the walker you report cannot find out it was you. If you delete your
 account, reports you sent are kept, no longer linked to you, because they still
-need answering.
+need answering. Reports other walkers made about you, or about your walks, are
+kept after you delete your account too, for the same reason.
 
 ### Photos you upload
 
@@ -382,8 +383,9 @@ Everything else is removed from our database within 30 days.
 Deleting removes your profile, your photo, your walks and their statistics,
 your notes, your grid squares, the walks you planned for a group and your
 answers to say you are coming. Planned walks and answers are hidden from
-everyone the moment you delete. If you are the only owner of a group, the
-group — and everyone's membership in it — is deleted along with your account.
+everyone the moment you delete. A group you own passes straight away to the
+admin who has been in it longest. If it has no admin, the group — and
+everyone's membership in it — is deleted along with your account.
 
 The **coverage totals you contributed are not reversed** — a coverage count
 records that an area was prayed over on a given day. It has no person attached
@@ -391,10 +393,24 @@ to it and cannot be traced back to you, so those counts stay. Other people's
 records of their own neighbourhoods are built from the same totals, so
 removing yours would corrupt theirs.
 
+**Reports about you are kept.** If other walkers reported you, or a walk or
+planned walk of yours, those reports stay after your account is gone: the
+reason they chose, what they wrote, and the id of what they reported, which
+leads to nothing once your account is removed. Each report was also emailed
+to us when it was made, naming you by the display name and handle you had
+then, and those emails stay in our inbox.
+
+**Your address is held until removal completes.** After you delete in the
+app, the address you signed in with can't be used to sign in to ardeo until
+removal completes: a sign-in link sent to it is refused, so it can't make a
+new account in that time either. Once removal completes, the address is free
+to make a new account.
+
 **Copies outside the live database** do not disappear the same moment. Our
 providers' service logs, which can include your email address and IP address,
 are kept by those providers for up to 30 days. Supabase's own backups roll over
-on its schedule. After those periods, no copy that identifies you remains.
+on its schedule. After those periods, no copy that identifies you remains,
+apart from the reports above.
 
 Deleting in the app also clears your walks, routes included, off that phone.
 Otherwise, data held only on your own phone goes when you delete the app, or
@@ -445,6 +461,13 @@ tell you in the app or by email before it takes effect.
 
 - You can now delete a single walk from its own page. It leaves our database
   straight away, and its coverage comes back out of the totals.
+- A group you own no longer disappears with your account when it has an
+  admin: it passes straight away to the admin who has been in it longest.
+  This page used to say "the only owner", but a group only ever has one.
+- It now says that reports other walkers made about you are kept after you
+  delete your account, along with the emails they sent us, and that the
+  address you signed in with can't sign in or make a new account until
+  removal completes.
 - Deleting your account in the app now clears your walks off that phone too,
   and a different account signing in on a phone starts without the last
   one's walks.
