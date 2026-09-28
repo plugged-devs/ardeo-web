@@ -364,6 +364,16 @@ removed sooner, email [privacy@ardeo.nz](mailto:privacy@ardeo.nz).
 
 Walks are kept until you delete them or delete your account.
 
+**To delete a walk**, open it from your profile or your walk list and choose
+**Delete walk**. It is removed from our database straight away — its
+statistics, its notes and its grid squares with it — and from every feed and
+planned walk it reached, then from your phone. A walk that has reached our
+database can only be deleted while your phone is online: deleting it from the
+phone alone would let it come back the next time you sign in. Unlike deleting
+your account, deleting a walk **does take its coverage back out of the
+totals**, because a single walk is usually deleted for having counted when it
+should not have.
+
 **To delete your account**, open **Settings → Delete account** in the app, or
 see [our deletion page](./delete-account.md) if you no longer have the app.
 Deleting in the app takes effect straight away: you are signed out, and your
@@ -449,6 +459,8 @@ tell you in the app or by email before it takes effect.
 
 ### What changed on 27 September 2026
 
+- You can now delete a single walk from its own page. It leaves our database
+  straight away, and its coverage comes back out of the totals.
 - A group you own no longer disappears with your account when it has an
   admin: it passes straight away to the admin who has been in it longest.
   This page used to say "the only owner", but a group only ever has one.
