@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["N2AW3A66P4.nz.ardeo.app"],
+        "components": [
+          { "/": "/auth", "comment": "The emailed sign-in link" },
+          { "/": "/auth.html", "comment": "The same page under its file name" }
+        ]
+      }
+    ]
+  }
+}

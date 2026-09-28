@@ -27,9 +27,14 @@
   </main>
   <script>
     // The sign-in email links here because many mail apps will not follow an
-    // app's own ardeo:// link. The token is in the fragment, which the browser
-    // never sends to this server; it goes on, unread, to the app, which is
-    // the only thing that spends it.
+    // app's own ardeo:// link. A build that claims https://ardeo.nz/auth (see
+    // /.well-known/) is opened by the OS directly and this page never loads,
+    // so it runs only for a build that does not, or when the OS declined to
+    // open the app. Only then does it hand on to ardeo://, which any
+    // installed app can claim — the reason to drop this step once no build
+    // without the claim is in use. The token is in the fragment, which the
+    // browser never sends to this server; it goes on, unread, to the app,
+    // which is the only thing that spends it.
     (function () {
       var hash = window.location.hash;
       if (hash.indexOf('token_hash=') === -1) {
